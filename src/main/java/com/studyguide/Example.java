@@ -27,6 +27,12 @@ public class Example {
         System.out.println("Question 2 - " + q2.getQuestion() +": "+  q2.getAnswer());
         System.out.println("Question 3 - " + q3.getQuestion() +": "+  q3.getAnswer());
 
+        Subject s1 = new Subject(5, "math" );
+
+        System.out.println("Subject id: " + s1.getId());
+        System.out.println("Subject name: " + s1.getName());
+
+
 
     }
 }
