@@ -40,7 +40,7 @@ public class Example {
 
         System.out.println("chapter id:" + c1.getId());
         System.out.println("chapter name: " + c1.getName());
-        System.out.println("chaptr questions: " +  c1.getQuestions().toString()     );
+        System.out.println("chaptr questions: " +  c1.getQuestions().toString());
 
     }
 }
