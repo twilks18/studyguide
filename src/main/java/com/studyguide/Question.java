@@ -1,5 +1,7 @@
 package com.studyguide;
 
+import java.util.Objects;
+
 public class Question {
     private int id;
     private String question;
@@ -38,20 +40,27 @@ public class Question {
         this.answer = answer;
     }
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (!(o instanceof Question)) return false;
-//        Question question1 = (Question) o;
-//        return getId().equals(question1.getId()) &&
-//                getQuestion().equals(question1.getQuestion()) &&
-//                getAnswer().equals(question1.getAnswer());
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(getId(), getQuestion(), getAnswer());
-//    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getQuestion(), getAnswer());
+    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Question)) return false;
+        Question question1 = (Question) o;
+        return getId() == question1.getId() &&
+                getQuestion().equals(question1.getQuestion()) &&
+                getAnswer().equals(question1.getAnswer());
+    }
 
+    @Override
+    public String toString() {
+        return "Question{" +
+                "id=" + id +
+                ", question='" + question + '\'' +
+                ", answer='" + answer + '\'' +
+                '}';
+    }
 }
