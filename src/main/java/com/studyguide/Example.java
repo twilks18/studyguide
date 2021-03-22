@@ -42,5 +42,12 @@ public class Example {
         System.out.println("chapter name: " + c1.getName());
         System.out.println("chaptr questions: " +  c1.getQuestions().toString());
 
+
+        /*Anything in square brackects is a list. Below is an example of a list in java*/
+
+        //chaptr questions: [Question{id=10, question='What is your name', answer='Pamela'}, Question{id=11,
+        // question='What month is your birthday?', answer='January'},
+        // Question{id=12, question='What is you favorite color?', answer='Blue.'}]
+
     }
 }
