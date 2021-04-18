@@ -1,9 +1,9 @@
 package com.studyguide;
 
-public class Subject {
+public class StudyGuide {
 
     /*
-     * Subject is the name of this class/object
+     * StudyGuide is the name of this class/object
      * private is a java keyword and it is an access modifier
      * access modifiers determine what fields or methods that can be accessed by other classes
      * int is a java keyword that identifies a field or method type
@@ -20,7 +20,7 @@ public class Subject {
      * This constructor is going to be used to construct our object/subject
      *
      */
-    public Subject(int id, String name) {
+    public StudyGuide(int id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -29,7 +29,7 @@ public class Subject {
      * No arg constructor which means this constructor does not contain arguments
      * This constructor is going to be used to construct our object/subject
      */
-    public Subject() {
+    public StudyGuide() {
     }
 
     public int getId() {
