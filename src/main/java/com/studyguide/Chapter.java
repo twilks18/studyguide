@@ -21,10 +21,10 @@ public class Chapter {
      *
      *
      */
-    public Chapter(int id, List<Question> questions, String name) {
-        this.id = id;
-        this.questions = questions;
-        this.name = name;
+    public Chapter(int identifier, List<Question> questionList, String chapterName) {
+        this.id = identifier;
+        this.questions = questionList;
+        this.name = chapterName;
     }
 
     /*

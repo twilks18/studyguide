@@ -1,5 +1,7 @@
 package com.studyguide;
 
+import java.util.List;
+
 public class StudyGuide {
 
     /*
@@ -11,8 +13,7 @@ public class StudyGuide {
      */
     private int id;
     private String name;
-//    private List<Chapter> chapters;
-
+    private List<Chapter> chapters;
 
     /**
      *
@@ -30,6 +31,14 @@ public class StudyGuide {
      * This constructor is going to be used to construct our object/subject
      */
     public StudyGuide() {
+    }
+
+    public List<Chapter> getChapters() {
+        return chapters;
+    }
+
+    public void setChapters(List<Chapter> chapters) {
+        this.chapters = chapters;
     }
 
     public int getId() {
